@@ -122,7 +122,7 @@ def algorithm(draw, grid, start, end):
             if event.type == pygame.QUIT:
                 pygame.quit()
 
-        current = open_set.get()[2]
+        current = open_set.get(5)[2]
         open_set_hash.remove(current)
 
         if current == end:
